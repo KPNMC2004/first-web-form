@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web form -- Kristian Pestano</title>
+</head>
+<body>
+    <h1>My First Web Form</h1>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <fieldset>
+            <legend>Name Information</legend>
+
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name">
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" id="last-name">
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="phone-number">Phone:</label>
+            <input type="tel" name="phone-number" id="phone-number">
+        </fieldset>
+        <fieldset>
+            <legend>Birthday</legend>
+            <label for="birth-date">Birth of date:</label>
+            <input type="date" name="birth-date" id="birth-date">
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Submit">
+        </fieldset> 
+        <iframe name="cgi-results" id="cgi-results"></iframe>
+    </form>
+</body>
+</html>
