@@ -1,0 +1,15 @@
+input#first-name,
+input#last-name {
+    width: 36ch;
+}
+
+input#email {
+    width: 50ch;
+}
+
+
+iframe#cgi-results {
+    width: 50%;
+    height: 512px;
+}
+

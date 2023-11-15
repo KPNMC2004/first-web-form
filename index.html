@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first web form -- Kristian Pestano</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>My First Web Form</h1>
 
-    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="cgiResults">
         <fieldset>
             <legend>Name Information</legend>
 
             <label for="first-name">First Name:</label>
-            <input type="text" name="first-name" id="first-name">
-            
+            <input type="text" required placeholder="First Name" name="firstName" id="first-name">
+            <br>
             <label for="last-name">Last Name:</label>
-            <input type="text" name="last-name" id="last-name">
+            <input type="text" required placeholder="Last Name" name="lastName" id="last-name">
         </fieldset>
 
         <fieldset>
             <legend>Contact Information</legend>
             
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-
+            <input type="email" placeholder="firstname.lastname@email.com" name="email" id="email" width="1000">
+            <br>
             <label for="phone-number">Phone:</label>
-            <input type="tel" name="phone-number" id="phone-number">
+            <input type="tel" placeholder="+10001231234" name="phoneNumber" id="phone-number">
         </fieldset>
+
         <fieldset>
             <legend>Birthday</legend>
-            <label for="birth-date">Birth of date:</label>
-            <input type="date" name="birth-date" id="birth-date">
+
+            <label for="birth-date">Date of birth:</label>
+            <input type="date" required name="birthDate" id="birth-date">
         </fieldset>
+
         <fieldset>
             <input type="submit" value="Submit">
         </fieldset> 
-        <iframe name="cgi-results" id="cgi-results"></iframe>
     </form>
+    <iframe name="cgiResults" id="cgi-results"></iframe>
 </body>
 </html>
